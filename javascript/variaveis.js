@@ -32,7 +32,7 @@ imprimirIdade(); */
 imprimirIdade2(); */
 // Não funciona pois const não pode ser alterado.
 
-const pessoa = {
+/* const pessoa = {
     nome: 'Atila',
     idade: 37
 }
@@ -41,4 +41,11 @@ function imprimirDadosPessoa() {
     console.log(`Nome é: ${pessoa.nome} e a idade é: ${pessoa.idade}`)
 }
 
-imprimirDadosPessoa();
+imprimirDadosPessoa(); */
+
+let base = 50;
+let altura = 100;
+
+let area = base * altura;
+
+console.log(area);
