@@ -74,7 +74,7 @@ retornarTexto(1000).then((texto) => {
   console.log(texto);
 }); */
 
-const retornarNumeroMultiplicado = (numero, multiplicador) => {
+/* const retornarNumeroMultiplicado = (numero, multiplicador) => {
     return new Promise((resolve, reject) => {
       setTimeout(() => {
         if (isNaN(numero) || isNaN(multiplicador)) {
@@ -92,5 +92,62 @@ const retornarNumeroMultiplicado = (numero, multiplicador) => {
     })
     .catch((erro) => {
       console.log(erro);
-    });
-  
+    }); */
+
+// ---- ASYNC / AWAIT
+
+/* async function somarNumeros(numeros) {
+  let soma = 0;
+
+  for (let i = 0; i < numeros.length; i++) {
+    soma += numeros[i];
+  }
+
+  return soma;
+}
+
+somarNumeros([1, 2, 3, 4, 5]).then((resultado) => {
+  console.log("Resultado da soma:", resultado);
+}); */
+
+/* async function calcularMedia(numeros) {
+  let soma = 0;
+
+  for (let i = 0; i < numeros.length; i++) {
+    soma += numeros[i];
+  }
+
+  const media = soma / numeros.length;
+
+  return media;
+}
+
+calcularMedia([10, 20, 30, 40, 50]).then((media) => {
+  console.log("Média:", media);
+});
+ */
+
+async function obterDadosUsuarios(ids) {
+  const dadosUsuarios = {
+    1: "João",
+    2: "Maria",
+    3: "Pedro",
+    4: "Ana",
+    5: "Carlos",
+  };
+
+  const nomes = [];
+
+  for (let i = 0; i < ids.length; i++) {
+    const id = ids[i];
+    if (dadosUsuarios[id]) {
+      nomes.push(dadosUsuarios[id]);
+    }
+  }
+
+  return nomes;
+}
+
+obterDadosUsuarios([1, 2, 3]).then((nomes) => {
+  console.log("Nomes dos usuários:", nomes);
+});
