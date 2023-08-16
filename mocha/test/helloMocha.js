@@ -10,6 +10,7 @@
 var assert = require("assert");
 
 describe("Mathematical Operations - Test Suite", function () {
+  this.timeout(3000) // Set a timeout of 5 seconds for this test
   /* before("Execute Before All Tests", function () {
     console.log("Execute Before All Tests");
   });
@@ -35,7 +36,9 @@ describe("Mathematical Operations - Test Suite", function () {
     assert.equal(c, 20);
   });
 
-  it("Subtraction of two numbers", function () {
+  it("Subtraction of two numbers", function (done) {
+    this.retries(3); // Retry the test up to 3 times if it fails
+    setTimeout(done,4000) // Simulate a test that takes 4 seconds
     var a = 10;
     var b = 10;
     var c = a - b;
