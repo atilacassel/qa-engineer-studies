@@ -1,7 +1,7 @@
-const multiply = require("./multiply");
+const multiply = require("../src/multiply");
 
 describe("test multiply positive scenarios", () => {
-  test("multiply 3*2 should equal 6", () => {
+  test.skip("multiply 3*2 should equal 6", () => {
     expect(multiply(3, 2)).toBe(6);
   });
 });

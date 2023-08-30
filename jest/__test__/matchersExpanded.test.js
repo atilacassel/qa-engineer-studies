@@ -2,7 +2,7 @@ test('there is pool in Liverpool', () => {
     expect('Liverpool').toMatch(/pool/);
 });
 
-const multiply = require("./multiply");
+const multiply = require("../src/multiply");
 
 describe("test multiply positive scenarios", () => {
   test("multiply 3*2 should equal 6", () => {
