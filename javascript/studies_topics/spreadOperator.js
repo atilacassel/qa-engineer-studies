@@ -1,3 +1,6 @@
+/* The spread operator allows you to spread elements of an iterable (e.g., an array) into another array or object.
+It is often used for copying, merging, or unpacking elements. */
+
 //Copiar Array
 const arrayOriginal = [1, 2, 3];
 const copiaArray = [...arrayOriginal];
