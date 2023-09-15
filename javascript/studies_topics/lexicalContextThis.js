@@ -1,3 +1,8 @@
+/* The value of `this` is determined by the surrounding lexical (static) context,
+ where a function is declared, rather than how or where it's called.
+Arrow functions inherit `this` from their enclosing (parent) function, 
+while regular functions define `this` based on how they are called. */
+
 /* const obj = {
   nome: "João",
   saudacao: function () {
