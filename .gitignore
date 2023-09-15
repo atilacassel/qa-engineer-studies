@@ -1,2 +1,38 @@
-.DS_Store
+# Node.js
 node_modules/
+
+# Compiled TypeScript
+*.js
+*.js.map
+
+# Jest
+coverage/
+
+# Mocha
+mochawesome-report/
+mochawesome.json
+
+# Editor/IDE specific files
+.vscode/
+.vscodeignore
+
+# Dependency lock files
+package-lock.json
+yarn.lock
+
+# Environment variables
+.env
+
+# Logs and generated files
+*.log
+*.log.*
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
