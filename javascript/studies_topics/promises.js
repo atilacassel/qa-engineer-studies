@@ -1,3 +1,6 @@
+/* Promises are a way to manage asynchronous operations in JavaScript.
+They represent a value that may not be available yet but will be resolved in the future. */
+
 /* const esperarPor = (ms) => {
   return new Promise((resolve) => {
     setTimeout(() => {
